@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Academy - Shaping Future Leaders</title>
+    <meta name="description" content="Excellence Academy - A premier institution dedicated to academic excellence and holistic development">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Excellence Academy</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('academics')">Academics</a></li>
+                <li><a href="#" onclick="showPage('admissions')">Admissions</a></li>
+                <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <button class="mobile-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="homePage" class="page-content active">
+        <!-- Hero Section with Image Slider -->
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231e40af;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad1)' width='1920' height='1080'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' fill='white' font-size='72' font-family='Arial' font-weight='bold'%3EExcellence in Education%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='white' font-size='36' font-family='Arial'%3EModern Learning Environment%3C/text%3E%3C/svg%3E" alt="School Campus">
+                </div>
+                <div class="slide">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad2)' width='1920' height='1080'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' fill='white' font-size='72' font-family='Arial' font-weight='bold'%3EInnovative Learning%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='white' font-size='36' font-family='Arial'%3ESmart Classrooms %26 Labs%3C/text%3E%3C/svg%3E" alt="Smart Classroom">
+                </div>
+                <div class="slide">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f59e0b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23d97706;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad3)' width='1920' height='1080'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' fill='white' font-size='72' font-family='Arial' font-weight='bold'%3EHolistic Development%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='white' font-size='36' font-family='Arial'%3ESports, Arts %26 Culture%3C/text%3E%3C/svg%3E" alt="Sports Activities">
+                </div>
+                <div class="slide">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='grad4' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%238b5cf6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%236d28d9;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad4)' width='1920' height='1080'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' fill='white' font-size='72' font-family='Arial' font-weight='bold'%3EFuture Ready%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='white' font-size='36' font-family='Arial'%3E25 Years of Excellence%3C/text%3E%3C/svg%3E" alt="Graduation">
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-btn prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+
+            <div class="hero-content">
+                <h1>Shaping Future Leaders</h1>
+                <p>Excellence in Education, Character, and Innovation</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary" onclick="showPage('admissions')">
+                        <i class="fas fa-user-plus"></i> Apply Now
+                    </a>
+                    <a href="#" class="btn btn-outline" onclick="showPage('about')">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="quick-links">
+            <div class="container">
+                <div class="quick-links-grid">
+                    <div class="quick-link-card" onclick="showPage('admissions')">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Admissions</h3>
+                        <p>Join our community of learners</p>
+                    </div>
+                    <div class="quick-link-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Results</h3>
+                        <p>Check academic performance</p>
+                    </div>
+                    <div class="quick-link-card">
+                        <i class="fas fa-laptop"></i>
+                        <h3>E-Learning</h3>
+                        <p>Access online resources</p>
+                    </div>
+                    <div class="quick-link-card" onclick="showPage('contact')">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Contact Us</h3>
+                        <p>Get in touch with us</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="2500">0</h2>
+                        <p>Students</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="150">0</h2>
+                        <p>Expert Teachers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="25">0</h2>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="98">0</h2>
+                        <p>% Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest News & Announcements</h2>
+                    <p>Stay updated with what's happening at Excellence Academy</p>
+                </div>
+                <div class="news-slider">
+                    <div class="news-track" id="newsTrack">
+                        <div class="news-card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect fill='%232563eb' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='24' font-family='Arial'%3EScience Fair 2026%3C/text%3E%3C/svg%3E" alt="News">
+                            <div class="news-content">
+                                <p class="news-date"><i class="far fa-calendar"></i> Jan 8, 2026</p>
+                                <h3>Annual Science Fair Registration Open</h3>
+                                <p>Students are invited to showcase their innovative projects.</p>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect fill='%2310b981' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='24' font-family='Arial'%3ESports Day%3C/text%3E%3C/svg%3E" alt="News">
+                            <div class="news-content">
+                                <p class="news-date"><i class="far fa-calendar"></i> Jan 5, 2026</p>
+                                <h3>Inter-House Sports Championship</h3>
+                                <p>Celebrating athleticism and team spirit this month.</p>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect fill='%23f59e0b' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='24' font-family='Arial'%3ENew Semester%3C/text%3E%3C/svg%3E" alt="News">
+                            <div class="news-content">
+                                <p class="news-date"><i class="far fa-calendar"></i> Jan 2, 2026</p>
+                                <h3>Spring Semester Begins</h3>
+                                <p>Welcome back! New courses and opportunities await.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Community Says</h2>
+                    <p>Hear from students, parents, and alumni</p>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Excellence Academy transformed my daughter's learning journey. The teachers are passionate, and the curriculum is exceptional."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <h4>Mrs. Johnson</h4>
+                                <p>Parent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The extracurricular activities and leadership opportunities have helped me develop skills beyond academics."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SA</div>
+                            <div class="author-info">
+                                <h4>Sarah Anderson</h4>
+                                <p>Senior Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"This school prepared me for university and life. The values I learned here continue to guide me every day."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DM</div>
+                            <div class="author-info">
+                                <h4>David Martinez</h4>
+                                <p>Alumni, Class of 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="aboutPage" class="page-content">
+        <section style="margin-top: 100px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Excellence Academy</h2>
+                    <p>Our Story, Mission, and Vision</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Our History</h3>
+                    <p style="margin-bottom: 2rem;">Founded in 2000, Excellence Academy has been at the forefront of educational innovation for over two decades. We began with a vision to create a learning environment that nurtures not just academic excellence, but also character, creativity, and critical thinking.</p>
+                    
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Our Mission</h3>
+                    <p style="margin-bottom: 2rem;">To provide world-class education that empowers students to become lifelong learners, responsible citizens, and future leaders who make positive contributions to society.</p>
+                    
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Our Vision</h3>
+                    <p style="margin-bottom: 2rem;">To be the leading educational institution recognized for academic excellence, innovation, and holistic development of students in a nurturing and inclusive environment.</p>
+                    
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Core Values</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light); border-radius: 10px;"><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 0.5rem;"></i> Excellence in all endeavors</li>
+                        <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light); border-radius: 10px;"><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 0.5rem;"></i> Integrity and honesty</li>
+                        <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light); border-radius: 10px;"><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 0.5rem;"></i> Respect and compassion</li>
+                        <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light); border-radius: 10px;"><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 0.5rem;"></i> Innovation and creativity</li>
+                        <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light); border-radius: 10px;"><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 0.5rem;"></i> Community and collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: var(--light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Message from the Principal</h2>
+                </div>
+                <div style="display: flex; gap: 3rem; align-items: center; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <div style="width: 250px; height: 250px; border-radius: 50%; background: var(--primary); margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 5rem; color: white;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div style="flex: 2; min-width: 300px;">
+                        <p style="font-style: italic; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">"Welcome to Excellence Academy, where we believe every child has the potential to achieve greatness. Our dedicated faculty and staff work tirelessly to create an environment where students can discover their passions, develop their talents, and grow into responsible global citizens."</p>
+                        <h4 style="color: var(--dark); margin-bottom: 0.25rem;">Dr. Emily Richardson</h4>
+                        <p style="color: var(--text); opacity: 0.7;">Principal, Excellence Academy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Academics Page -->
+    <div id="academicsPage" class="page-content">
+        <section style="margin-top: 100px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Academic Programs</h2>
+                    <p>Comprehensive curriculum for all levels</p>
+                </div>
+                <div class="quick-links-grid">
+                    <div class="quick-link-card">
+                        <i class="fas fa-baby"></i>
+                        <h3>Nursery (Ages 3-5)</h3>
+                        <p>Play-based learning and early development</p>
+                    </div>
+                    <div class="quick-link-card">
+                        <i class="fas fa-child"></i>
+                        <h3>Primary (Grades 1-6)</h3>
+                        <p>Foundation in core subjects and skills</p>
+                    </div>
+                    <div class="quick-link-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Secondary (Grades 7-12)</h3>
+                        <p>Advanced studies and specialization</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 4rem;">
+                    <h3 style="color: var(--primary); text-align: center; margin-bottom: 2rem;">Subjects Offered</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="padding: 1rem; background: var(--light); border-radius: 10px; text-align: center;">
+                            <i class="fas fa-calculator" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
+                            <p>Mathematics</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--light); border-radius: 10px; text-align: center;">
+                            <i class="fas fa-flask" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
+                            <p>Sciences</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--light); border-radius: 10px; text-align: center;">
+                            <i class="fas fa-book" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
+                            <p>Languages</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--light); border-radius: 10px; text-align: center;">
+                            <i class="fas fa-laptop-code" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
+                            <p>Computer Science</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--light); border-radius: 10px; text-align: center;">
+                            <i class="fas fa-paint-brush" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
+                            <p>Arts</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--light); border-radius: 10px; text-align: center;">
+                            <i class="fas fa-music" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
+                            <p>Music</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Admissions Page -->
+    <div id="admissionsPage" class="page-content">
+        <section style="margin-top: 100px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Admissions</h2>
+                    <p>Join the Excellence Academy family</p>
+                </div>
+                
+                <div style="max-width: 700px; margin: 0 auto; background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 40px var(--shadow);">
+                    <h3 style="color: var(--primary); margin-bottom: 2rem; text-align: center;">Online Application Form</h3>
+                    <form id="admissionForm" onsubmit="handleAdmission(event)">
+                        <div class="form-group">
+                            <label>Student's Full Name *</label>
+                            <input type="text" required placeholder="Enter full name">
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth *</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Grade Applying For *</label>
+                            <select required>
+                                <option value="">Select Grade</option>
+                                <option>Nursery</option>
+                                <option>Grade 1</option>
+                                <option>Grade 2</option>
+                                <option>Grade 3</option>
+                                <option>Grade 4</option>
+                                <option>Grade 5</option>
+                                <option>Grade 6</option>
+                                <option>Grade 7</option>
+                                <option>Grade 8</option>
+                                <option>Grade 9</option>
+                                <option>Grade 10</option>
+                                <option>Grade 11</option>
+                                <option>Grade 12</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Parent/Guardian Name *</label>
+                            <input type="text" required placeholder="Enter parent/guardian name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" required placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label>Previous School</label>
+                            <input type="text" placeholder="Name of previous school">
+                        </div>
+                        <div class="form-group">
+                            <label>Additional Information</label>
+                            <textarea rows="4" placeholder="Any special requirements or questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                    </form>
+                </div>
+
+                <div style="margin-top: 4rem;">
+                    <h3 style="color: var(--primary); text-align: center; margin-bottom: 2rem;">Fee Structure 2026</h3>
+                    <div style="max-width: 800px; margin: 0 auto; background: var(--light); padding: 2rem; border-radius: 15px;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: var(--primary); color: white;">
+                                    <th style="padding: 1rem; text-align: left;">Level</th>
+                                    <th style="padding: 1rem; text-align: right;">Annual Fee</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border);">
+                                    <td style="padding: 1rem;">Nursery</td>
+                                    <td style="padding: 1rem; text-align: right; font-weight: 600;">$8,500</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border);">
+                                    <td style="padding: 1rem;">Primary (Grades 1-6)</td>
+                                    <td style="padding: 1rem; text-align: right; font-weight: 600;">$12,000</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem;">Secondary (Grades 7-12)</td>
+                                    <td style="padding: 1rem; text-align: right; font-weight: 600;">$15,500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8; text-align: center;">
+                            <i class="fas fa-info-circle"></i> Scholarships and financial aid available for qualified students
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="galleryPage" class="page-content">
+        <section style="margin-top: 100px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Photo Gallery</h2>
+                    <p>Moments captured at Excellence Academy</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%232563eb' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='20' font-family='Arial'%3EScience Lab%3C/text%3E%3C/svg%3E" alt="Gallery">
+                        <div class="gallery-overlay">
+                            <h4>Science Laboratory</h4>
+                            <p>State-of-the-art facilities</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%2310b981' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='20' font-family='Arial'%3ESports Day%3C/text%3E%3C/svg%3E" alt="Gallery">
+                        <div class="gallery-overlay">
+                            <h4>Annual Sports Day</h4>
+                            <p>Athletic excellence</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23f59e0b' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='20' font-family='Arial'%3ELibrary%3C/text%3E%3C/svg%3E" alt="Gallery">
+                        <div class="gallery-overlay">
+                            <h4>Modern Library</h4>
+                            <p>Over 20,000 books</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23ec4899' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='20' font-family='Arial'%3EMusic Room%3C/text%3E%3C/svg%3E" alt="Gallery">
+                        <div class="gallery-overlay">
+                            <h4>Music Department</h4>
+                            <p>Nurturing creativity</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%238b5cf6' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='20' font-family='Arial'%3EClassroom%3C/text%3E%3C/svg%3E" alt="Gallery">
+                        <div class="gallery-overlay">
+                            <h4>Smart Classrooms</h4>
+                            <p>Technology-enabled learning</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%2306b6d4' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='20' font-family='Arial'%3EGraduation%3C/text%3E%3C/svg%3E" alt="Gallery">
+                        <div class="gallery-overlay">
+                            <h4>Graduation Ceremony</h4>
+                            <p>Celebrating achievements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contactPage" class="page-content">
+        <section style="margin-top: 100px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Get In Touch</h3>
+                        <div style="margin-bottom: 1.5rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: var(--primary);"></i>
+                                <div>
+                                    <strong>Address</strong>
+                                    <p>123 Education Street, Learning City, ST 12345</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-phone" style="font-size: 1.5rem; color: var(--primary);"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-envelope" style="font-size: 1.5rem; color: var(--primary);"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>info@excellenceacademy.edu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Send a Message</h3>
+                        <form onsubmit="handleContact(event)">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Excellence Academy</h3>
+                    <p>Committed to excellence in education since 2000. Shaping future leaders through quality education and holistic development.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                        <li><a href="#" onclick="showPage('academics')">Academics</a></li>
+                        <li><a href="#" onclick="showPage('admissions')">Admissions</a></li>
+                        <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Nursery</a></li>
+                        <li><a href="#">Primary School</a></li>
+                        <li><a href="#">Secondary School</a></li>
+                        <li><a href="#">Extra-Curricular</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@excellenceacademy.edu</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8AM - 4PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Excellence Academy. All rights reserved. | Designed with excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <button class="chatbot-trigger" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i>
+    </button>
+    <div class="chatbot-window" id="chatbotWindow">
+        <div class="chatbot-header">
+            <h3>School Assistant</h3>
+            <button class="chatbot-close" onclick="toggleChatbot()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="chatbot-message bot">
+                <p>Hello! I'm here to help. How can I assist you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleChatKey(event)">
+            <button onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="SCRIPT.JS"></script>
+</body>
+</html>
