@@ -160,7 +160,7 @@ function sendMessage() {
         
         const responses = {
             'admission': 'You can apply for admission through our online form. Visit the Admissions page for more details!',
-            'name of the school': 'The name of our school is New Beginning School.',
+            'school': 'The name of our school is New Beginning School.',
             'name': 'I am the New Beginning School Chatbot, here to assist you with any questions you may have.',
             'fee': 'Our fee structure varies by level. Please check the Admissions page for detailed information.',
             'contact': 'You can reach us at +256 0702138799 or email info@newbeginning.edu',
